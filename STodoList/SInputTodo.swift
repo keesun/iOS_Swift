@@ -11,8 +11,8 @@ import UIKit
 class SInputTodo: UIViewController
 {
     var btnOK : UIButton!
-    var theToDoTitles : NSMutableArray!
-    var theToDoContents : NSMutableArray!
+    var theToDoTitles : [String] = []
+    var theToDoContents : [String] = []
     
     //    NSMutableArray* theToDoTitles;
     //    NSMutableArray* theToDoContents;
@@ -32,10 +32,8 @@ class SInputTodo: UIViewController
     func OkTODO(sender:UIButton)
     {
         self.navigationController?.popViewControllerAnimated(true)
-        theToDoTitles.addObject("title")
-        theToDoTitles += "title"
-
-        theToDoContents.addObject("content")
+        theToDoTitles += ["title"]
+        theToDoContents += ["content"]
     }
     
     override func didReceiveMemoryWarning() {

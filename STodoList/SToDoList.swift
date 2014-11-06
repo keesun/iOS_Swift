@@ -72,7 +72,7 @@ class SToDoList: UITableViewController{
         if cell==0{
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: CellIdentifier)
         }
-        cell.textLabel?.text = "\theToDoTitles.objectAtIndex(indexPath.row)"
+        cell.textLabel.text = "\theToDoTitles.objectAtIndex(indexPath.row)"
         cell.detailTextLabel?.text = "\theToDoContents.objectAtIndex(indexPath.row"
         return cell
     }
